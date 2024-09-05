@@ -7,7 +7,7 @@ public class TimeSystem : MonoBehaviour
 {
     public Text timeText;
     public static float timer = 10;
-    private float lowTime = 5;
+    private float lowTime = timer / 3;
     private float rotator = 0;
     private float rotatorChange = 0.01f;
     // Start is called before the first frame update
@@ -33,12 +33,14 @@ public class TimeSystem : MonoBehaviour
         if (rotator >= 10 || rotator <= -10){
             rotatorChange *= -1;
         }
-        Debug.Log(rotator + "" + rotatorChange);
     }
     public void UpdateText(){
          timer -= Time.deltaTime;
         if (timer <= 0){
             timeText.text = "Out of Time!";
+            if (Random.Range(0,5) == 0){
+                timeText.text = "";
+            }
         }
         else{
             timeText.text = "" + timer.ToString().Substring(0,5);
