@@ -13,6 +13,6 @@ public class MenuOpener : MonoBehaviour
 	}
 
 	void TaskOnClick(){
-		Debug.Log("You have clicked the button!");
+		//Debug.Log("You have clicked the button!");
 	}
 }
