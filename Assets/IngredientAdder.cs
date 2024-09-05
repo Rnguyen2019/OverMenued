@@ -4,10 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class IngredientAdder : MonoBehaviour
+public class MenuOpener : MonoBehaviour
 {
     public Button button;
 	public string buttonText;
+	public List<string> ingredientList = new List<string>();
 
 	void Start () {
 		Button btn = button.GetComponent<Button>();
@@ -16,6 +17,7 @@ public class IngredientAdder : MonoBehaviour
 	}
 
 	void TaskOnClick(){
+		ingredientList.Add(buttonText);
 		Debug.Log(buttonText);
 		GameObject.Find("IngredientList").GetComponent<IngredientList>().AddToList(buttonText);
 	}
