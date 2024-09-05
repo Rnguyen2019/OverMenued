@@ -38,9 +38,6 @@ public class TimeSystem : MonoBehaviour
          timer -= Time.deltaTime;
         if (timer <= 0){
             timeText.text = "Out of Time!";
-            if (Random.Range(0,5) == 0){
-                timeText.text = "";
-            }
         }
         else{
             timeText.text = "" + timer.ToString().Substring(0,5);
