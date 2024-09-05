@@ -6,18 +6,30 @@ using UnityEngine;
 public class NewBehaviourScript : MonoBehaviour
 {
     // Start is called before the first frame update
-    public static Recipes burger = new Recipes(new List<string>(){"beef","bread"},new List<string>(){"cheese","lettuce", "pickle","onion"},"plate","grill");
-    public static Recipes salad = new Recipes(new List<string>(){"lettuce","tomatoes", "pepper", "carrot"},new List<string>(){"onion","cucumber"},"bowl");
-    public static Recipes pizza = new Recipes(new List<string>(){"bread","cheese","oven"},new List<string>(){"pepperoni","mushroom","pepper", "artichoke", "pineapple", "chicken"},"plate","oven");
-    public static Recipes pasta = new Recipes(new List<string>(){"noodles","water"},new List<string>(){"pesto","tomato","chicken"},"plate","pot");
-    public static Recipes breakfast = new Recipes(new List<string>(){"bacon","potato","eggs","milk"},new List<string>(){"bellpeper"},"plate","pot");
-    
-    
-    public List<Recipes> menu = new List<Recipes>() {burger,salad,pizza,pasta,breakfast};
+    public List<Recipes> menu = new List<Recipes>();
     void Start()
     {
+        List<string> ingredients = new List<string>();
         int choice = UnityEngine.Random.Range(0,menu.Count-1);
-        int optionChoice = UnityEngine.Random.Range(0,);
+        int rand = UnityEngine.Random.Range(0,menu[choice].optionals.Count);
+        
+        for (int i = 0; i < menu[choice].necessary.Count; i++)
+        {
+            ingredients.Add(menu[choice].necessary[i]);
+        }
+        if (rand != 0)
+        {
+            for (int i = 0; i < rand; i++)
+            {
+                ingredients.Add(menu[choice].optionals[i]);
+            }
+        }
+        for (int i = 0; i < ingredients.Count; i++)
+        {
+            Debug.Log(ingredients[i]);
+        }
+
+        
     }
 
     // Update is called once per frame
