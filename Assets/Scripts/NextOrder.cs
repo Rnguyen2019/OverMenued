@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class NextOrder : MonoBehaviour
 {
     // Start is called before the first frame update
     public List<Recipes> menu = new List<Recipes>();
