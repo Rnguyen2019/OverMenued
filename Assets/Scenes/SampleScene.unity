@@ -122,6 +122,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &216532682 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5527114185430459271, guid: 1ce6a508d7f3643e3a2879b22e1a740a, type: 3}
+  m_PrefabInstance: {fileID: 5082239249245065948}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +225,75 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &586570553
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 586570555}
+  - component: {fileID: 586570554}
+  - component: {fileID: 586570556}
+  m_Layer: 0
+  m_Name: menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &586570554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586570553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70af8265ca34f4bad954b1df67014822, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dish: {fileID: 0}
+  rand: 0
+  menu:
+  - {fileID: 2996354904624224474, guid: 9d141ffd4b07443c2bcc491e7748bed8, type: 3}
+  - {fileID: 2996354904624224474, guid: 37c6f4b03ba944cb9ab92eb24ae5e64f, type: 3}
+  - {fileID: 2996354904624224474, guid: 7276e64220daa45e688e714ad57cdca9, type: 3}
+  - {fileID: 2996354904624224474, guid: 898e4d35a3f9d4543ad8df3276eefbb6, type: 3}
+  - {fileID: 2996354904624224474, guid: c6da3d520249b4004bf2b359f57b54c4, type: 3}
+  - {fileID: 2996354904624224474, guid: 12da84479719248e1aec1b902f91e6ea, type: 3}
+  - {fileID: 2996354904624224474, guid: 327bf1566a31a46e7949f680e7a4c1bf, type: 3}
+  - {fileID: 2996354904624224474, guid: b78d01576f36f416fb953112b5102566, type: 3}
+--- !u!4 &586570555
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586570553}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 126.765594, y: 43.66335, z: -1.581286}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &586570556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586570553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 763ec19733b8b47ef8c8630b995017f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  receipt: {fileID: 216532682}
 --- !u!1 &594000857
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,6 +567,24 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5527114185430459271, guid: 1ce6a508d7f3643e3a2879b22e1a740a, type: 3}
+      propertyPath: m_Text
+      value: "*****************\nDish\nIngredient #1 \nIngredient #2\nIngredient
+        #3\nIngredient #4\nIngredient #5\nIngredient #6\n\nTotal\n- - - - - - - -
+        - - - -"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527114185430459271, guid: 1ce6a508d7f3643e3a2879b22e1a740a, type: 3}
+      propertyPath: m_Color.b
+      value: 0.09741012
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527114185430459271, guid: 1ce6a508d7f3643e3a2879b22e1a740a, type: 3}
+      propertyPath: m_Color.g
+      value: 0.100736484
+      objectReference: {fileID: 0}
+    - target: {fileID: 5527114185430459271, guid: 1ce6a508d7f3643e3a2879b22e1a740a, type: 3}
+      propertyPath: m_Color.r
+      value: 0.103773594
+      objectReference: {fileID: 0}
     - target: {fileID: 6015879584653859015, guid: 1ce6a508d7f3643e3a2879b22e1a740a, type: 3}
       propertyPath: m_Name
       value: Receipt
@@ -556,3 +654,4 @@ SceneRoots:
   - {fileID: 594000861}
   - {fileID: 1081599269}
   - {fileID: 5082239249245065948}
+  - {fileID: 586570555}

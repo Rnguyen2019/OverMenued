@@ -44,6 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc812dff2c24f438b9f398d55c06d6cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dishName: Salad
   necessary:
   - lettuce
   - tomato
@@ -54,3 +55,4 @@ MonoBehaviour:
   - cucumber
   appliance: 
   plate: bowl
+  price: 7.99
