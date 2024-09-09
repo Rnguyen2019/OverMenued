@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class IngredientAdder : MonoBehaviour
+public class ApplianceAdder : MonoBehaviour
 {
     public Button button;
 	public string buttonText;
@@ -17,6 +17,6 @@ public class IngredientAdder : MonoBehaviour
 
 	void TaskOnClick(){
 		Debug.Log(buttonText);
-		GameObject.Find("IngredientList").GetComponent<IngredientList>().AddToList(buttonText);
+		GameObject.Find("ApplianceList").GetComponent<ApplianceList>().AddToList(buttonText);
 	}
 }
