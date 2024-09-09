@@ -18,4 +18,8 @@ public class IngredientList : MonoBehaviour
         oldText = text.text;
         text.text = oldText + "\n" + newIngredient;
     }
+
+    public void ResetText(){
+        text.text = "";
+    }
 }
