@@ -6,8 +6,11 @@ using UnityEngine;
 public class Submit : MonoBehaviour
 {
     private bool _ingredientsMatch = false;
+    private bool incorrect = false;
     public List<string> selectedIngredients = new List<string>(){"bread","lettuce","meat"};
     public List<string> ingredients = new List<string>(){"lettuce","meat","1"};
+    public string selectedPlate = "bowl";
+    public string selectedAppliance = "grill";
     // Start is called before the first frame update
     void Start()
     {
@@ -15,21 +18,31 @@ public class Submit : MonoBehaviour
         {
             for (int j = 0; j < selectedIngredients.Count; j++)
             {
-                if (selectedIngredients[i].Equals(ingredients[j]))
+                if (selectedIngredients[j].Equals(ingredients[i]))
                 { 
                     _ingredientsMatch = true;
-                    Debug.Log(_ingredientsMatch.ToString() + selectedIngredients[i] + selectedIngredients[j]);
+                    Debug.Log("Ingredients Match" + ingredients[i] + selectedIngredients[j]);
                 }
             }
             if (_ingredientsMatch)
             {
-                Debug.Log("Ingredients Match" + ingredients[i] + selectedIngredients[i]);
                 _ingredientsMatch = false;
             }
             else
             {
                 Debug.Log("incoreect");
+                incorrect = true;
+                break;
             }
+        }
+//if it's fully correct
+        if (NextOrder.menu[NextOrder.choice].appliance.Equals(selectedAppliance) && NextOrder.menu[NextOrder.choice].plate.Equals(selectedPlate) && !incorrect)
+        {
+            
+        }
+        if (incorrect)
+        {
+            
         }
 
     }

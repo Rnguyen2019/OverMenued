@@ -6,12 +6,13 @@ using UnityEngine;
 public class NextOrder : MonoBehaviour
 {
     // Start is called before the first frame update
-    public List<Recipes> menu = new List<Recipes>();
+    static public List<Recipes> menu = new List<Recipes>();
     public static List<string> ingredients;
+    static public int choice;
     void Start()
     {
             ingredients = new List<string>();
-            int choice = UnityEngine.Random.Range(0,menu.Count-1);
+            choice = UnityEngine.Random.Range(0,menu.Count-1);
             int rand = UnityEngine.Random.Range(0,menu[choice].optionals.Count);
         
             for (int i = 0; i < menu[choice].necessary.Count; i++)
