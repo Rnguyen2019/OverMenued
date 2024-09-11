@@ -8,8 +8,8 @@ public class Submit : MonoBehaviour
     public NextOrder nextOrder;
     private bool _ingredientsMatch = false;
     private bool incorrect = false;
-    public List<string> selectedIngredients = new List<string>(){"bread","lettuce","meat"};
-    public List<string> ingredients = new List<string>(){"lettuce","meat","1"};
+    public List<string> selectedIngredients = new List<string>(){"bread","meat","lettuce"};
+    public List<string> ingredients = new List<string>(){"lettuce","meat","bread"};
     public string selectedPlate = "bowl";
     public string selectedAppliance = "grill";
     // Start is called before the first frame update
@@ -47,7 +47,7 @@ public class Submit : MonoBehaviour
         {
             
         }
-        else if (nextOrder.currentRecipe.appliance.Equals(selectedAppliance) && nextOrder.currentRecipe.plate.Equals(selectedPlate) && !incorrect)
+        else if (nextOrder.currentRecipe.appliance.Equals(selectedAppliance) && nextOrder.currentRecipe.plate.Equals(selectedPlate))
         {
             
         }

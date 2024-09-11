@@ -13,6 +13,7 @@ public class Recipes : MonoBehaviour
         {
             necessary = necessaries;
             this.plate = plate;
+            this.appliance = appliance;
         }
         public Recipes(List<string> necessaries, List<string> optional, string plate)
         {
