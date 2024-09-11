@@ -38,6 +38,7 @@ public class TimeSystem : MonoBehaviour
          timer -= Time.deltaTime;
         if (timer <= 0){
             timeText.text = "Out of Time!";
+            timeText.text = "Fucking Loser Moron Idiot Shit Head Nerd!";
         }
         else{
             if(timer.ToString().Length >= 5){

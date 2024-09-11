@@ -16,7 +16,7 @@ public class ReceiptScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        receipt.text = "***************** \n" + gameObject.GetComponent<NextOrder>().dish.dishName + "\n\n";
+        /*receipt.text = "***************** \n" + gameObject.GetComponent<NextOrder>().dish.dishName + "\n\n";
         cost = gameObject.GetComponent<NextOrder>().dish.price;
         int rand1 = gameObject.GetComponent<NextOrder>().rand;
         if (rand1 != 0)
@@ -29,6 +29,6 @@ public class ReceiptScript : MonoBehaviour
         }
         receipt.text += "\nTotal     $" + cost +"\n- - - - - - - - - - -";
         //receipt.fontStyle = FontStyle.Bold;
-        PointSystem.gainPoints(cost);
+        //PointSystem.gainPoints(cost);*/
     }
 }

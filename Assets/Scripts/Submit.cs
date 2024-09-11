@@ -7,8 +7,8 @@ public class Submit : MonoBehaviour
 {
     private bool _ingredientsMatch = false;
     private bool incorrect = false;
-    public List<string> selectedIngredients = new List<string>(){"bread","lettuce","meat"};
-    public List<string> ingredients = new List<string>(){"lettuce","meat","1"};
+    public List<string> selectedIngredients = new List<string>(){"1","2","3"};
+    public List<string> ingredients = new List<string>(){"2","3","1"};
     public string selectedPlate = "bowl";
     public string selectedAppliance = "grill";
     // Start is called before the first frame update

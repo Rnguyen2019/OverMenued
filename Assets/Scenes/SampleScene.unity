@@ -122,33 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &26215220 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7504250309337501504, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
-  m_PrefabInstance: {fileID: 6291702582510272843}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &26215225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 26215220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 22017a2f77df649d18e1191fc2e0a202, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectedIngredients:
-  - bread
-  - lettuce
-  - meat
-  - green
-  ingredients:
-  - lettuce
-  - meat
-  - 1
-  - green
 --- !u!114 &216532682 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5527114185430459271, guid: 1ce6a508d7f3643e3a2879b22e1a740a, type: 3}
@@ -675,6 +648,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5962200194590890052, guid: 40bd4c7f0f524467fad8d5f6e11878f3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6571336873556395383, guid: 40bd4c7f0f524467fad8d5f6e11878f3, type: 3}
       propertyPath: m_Name
       value: PointSystem
@@ -696,10 +673,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Menu
       objectReference: {fileID: 0}
+    - target: {fileID: 7628763915952271957, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8174014017011774489, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
       propertyPath: receipt
       value: 
       objectReference: {fileID: 216532682}
+    - target: {fileID: 8174014017011774489, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8853845467369004803, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 126.765594
@@ -743,10 +728,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7504250309337501504, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 26215225}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
