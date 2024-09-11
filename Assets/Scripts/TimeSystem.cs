@@ -40,7 +40,9 @@ public class TimeSystem : MonoBehaviour
             timeText.text = "Out of Time!";
         }
         else{
-            timeText.text = "" + timer.ToString().Substring(0,5);
+            if(timer.ToString().Length >= 5){
+                timeText.text = "" + timer.ToString().Substring(0,5);
+            }
         }
     }
     public void LowTime(){

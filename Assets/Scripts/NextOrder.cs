@@ -29,7 +29,7 @@ public class NextOrder : MonoBehaviour
         }
         for (int i = 0; i < ingredients.Count; i++)
         {
-            Debug.Log(ingredients[i]);
+            //Debug.Log(ingredients[i]);
         }
 
         

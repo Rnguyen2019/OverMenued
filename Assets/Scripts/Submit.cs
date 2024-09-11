@@ -15,15 +15,15 @@ public class Submit : MonoBehaviour
         {
             for (int j = 0; j < selectedIngredients.Count; j++)
             {
-                if (selectedIngredients[i].Equals(ingredients[j]))
+                if (selectedIngredients[j].Equals(ingredients[i]))
                 { 
                     _ingredientsMatch = true;
-                    Debug.Log(_ingredientsMatch.ToString() + selectedIngredients[i] + selectedIngredients[j]);
+                    Debug.Log(selectedIngredients[j] + ingredients[i]);
                 }
             }
             if (_ingredientsMatch)
             {
-                Debug.Log("Ingredients Match" + ingredients[i] + selectedIngredients[i]);
+                //Debug.Log("Ingredients Match" + ingredients[i] + selectedIngredients[i]);
                 _ingredientsMatch = false;
             }
             else

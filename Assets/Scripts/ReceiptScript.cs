@@ -29,5 +29,6 @@ public class ReceiptScript : MonoBehaviour
         }
         receipt.text += "\nTotal     $" + cost +"\n- - - - - - - - - - -";
         //receipt.fontStyle = FontStyle.Bold;
+        PointSystem.gainPoints(cost);
     }
 }
