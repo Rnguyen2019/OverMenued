@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class Submit : MonoBehaviour
 {
+    public NextOrder nextOrder;
     private bool _ingredientsMatch = false;
     private bool incorrect = false;
     public List<string> selectedIngredients = new List<string>(){"bread","lettuce","meat"};
@@ -14,6 +15,7 @@ public class Submit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        nextOrder = GetComponent<NextOrder>();
         for (int i = 0; i < ingredients.Count; i++)
         {
             for (int j = 0; j < selectedIngredients.Count; j++)
@@ -36,14 +38,20 @@ public class Submit : MonoBehaviour
             }
         }
 //if it's fully correct
-        if (NextOrder.menu[NextOrder.choice].appliance.Equals(selectedAppliance) && NextOrder.menu[NextOrder.choice].plate.Equals(selectedPlate) && !incorrect)
+        if ( nextOrder.currentRecipe != null)
         {
-            
+            Debug.Log("12345678");
         }
+
         if (incorrect)
         {
             
         }
+        else if (nextOrder.currentRecipe.appliance.Equals(selectedAppliance) && nextOrder.currentRecipe.plate.Equals(selectedPlate) && !incorrect)
+        {
+            
+        }
+        
 
     }
 
