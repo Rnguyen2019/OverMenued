@@ -12,8 +12,7 @@ public class DishList : MonoBehaviour
 
     void Start()
     {
-        /*oldText = "jorbis" + "\n";
-        text.text = oldText + "Jorbis2" + "\n";*/
+        text.text = "Dish:";
     }
 
     public void AddToList(string newDish){
@@ -22,7 +21,8 @@ public class DishList : MonoBehaviour
         text.text = oldText + "\n" + newDish;
     }
 
-    public void ResetText(){
-        text.text = "";
+    public void Reset(){
+        text.text = "Dish:";
+        selectedDish.Clear();
     }
 }

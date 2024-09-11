@@ -12,8 +12,7 @@ public class ApplianceList : MonoBehaviour
 
     void Start()
     {
-        /*oldText = "jorbis" + "\n";
-        text.text = oldText + "Jorbis2" + "\n";*/
+        text.text = "Appliance:";
     }
 
     public void AddToList(string newAppliance){
@@ -22,7 +21,8 @@ public class ApplianceList : MonoBehaviour
         text.text = oldText + "\n" + newAppliance;
     }
 
-    public void ResetText(){
-        text.text = "";
+    public void Reset(){
+        text.text = "Appliance:";
+        selectedAppliance.Clear();
     }
 }

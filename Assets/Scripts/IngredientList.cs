@@ -12,8 +12,7 @@ public class IngredientList : MonoBehaviour
 
     void Start()
     {
-        /*oldText = "jorbis" + "\n";
-        text.text = oldText + "Jorbis2" + "\n";*/
+        text.text = "Ingredients:";
     }
 
     public void AddToList(string newIngredient){
@@ -22,8 +21,9 @@ public class IngredientList : MonoBehaviour
         text.text = oldText + "\n" + newIngredient;
     }
 
-    public void ResetText(){
-        text.text = "";
+    public void Reset(){
+        text.text = "Ingredients:";
+        selectedIngredients.Clear();
     }
 
     void Update(){
