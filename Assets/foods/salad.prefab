@@ -55,4 +55,4 @@ MonoBehaviour:
   - cucumber
   appliance: 
   plate: bowl
-  price: 7.99
+  cost: 7.99
