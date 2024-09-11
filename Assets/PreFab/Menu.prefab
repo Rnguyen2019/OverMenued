@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8853845467369004803}
   - component: {fileID: 3552109659913400012}
   - component: {fileID: 8174014017011774489}
+  - component: {fileID: 7628763915952271957}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -70,3 +71,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   receipt: {fileID: 0}
   cost: 0
+--- !u!114 &7628763915952271957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7504250309337501504}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22017a2f77df649d18e1191fc2e0a202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedIngredients:
+  - bread
+  - lettuce
+  - meat
+  ingredients:
+  - lettuce
+  - meat
+  - 1
