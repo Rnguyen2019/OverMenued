@@ -9,11 +9,12 @@ public class NextOrder : MonoBehaviour
     public List<Recipes> menu = new List<Recipes>();
     public static List<string> ingredients;
     public Recipes currentRecipe;
+    public int rand;
     void Start()
     {
             ingredients = new List<string>();
             int choice = UnityEngine.Random.Range(0,menu.Count-1);
-            int rand = UnityEngine.Random.Range(0,menu[choice].optionals.Count);
+            rand = UnityEngine.Random.Range(0,menu[choice].optionals.Count);
             currentRecipe = menu[choice];
         
             for (int i = 0; i < menu[choice].necessary.Count; i++)

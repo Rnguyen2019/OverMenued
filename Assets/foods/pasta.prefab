@@ -54,4 +54,4 @@ MonoBehaviour:
   - chicken
   appliance: pot
   plate: bowl
-  price: 10.99
+  cost: 14.99

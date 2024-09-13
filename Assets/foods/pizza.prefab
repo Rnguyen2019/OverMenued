@@ -58,4 +58,4 @@ MonoBehaviour:
   - chicken
   appliance: oven
   plate: plate
-  price: 15.99
+  cost: 16.59
