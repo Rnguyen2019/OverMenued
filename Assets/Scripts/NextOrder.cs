@@ -7,7 +7,7 @@ public class NextOrder : MonoBehaviour
 {
     // Start is called before the first frame update
     public List<Recipes> menu = new List<Recipes>();
-    public static List<string> ingredients;
+    public List<string> ingredients;
     public Recipes currentRecipe;
     void Start()
     {
@@ -32,8 +32,9 @@ public class NextOrder : MonoBehaviour
                 Debug.Log(ingredients[i]);
             }
             Debug.Log("--------------------");
-
-        
+            
+            GetComponent<Submit>().SubmitOrder();
+            
     }
 
     // Update is called once per frame

@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   necessary:
-  - meat
+  - beef
   - bread
   optionals:
   - cheese
