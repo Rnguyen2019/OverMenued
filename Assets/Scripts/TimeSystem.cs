@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class TimeSystem : MonoBehaviour
 {
     public Text timeText;
-    public static float timer = 10;
+    public static float timer = 30;
     private float lowTime = timer / 3;
     private float rotator = 0;
     private float rotatorChange = 0.01f;

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3826354078823605375}
   - component: {fileID: 5655652887887602707}
   - component: {fileID: 5879051661765936647}
-  - component: {fileID: 5962200194590890052}
+  - component: {fileID: -5595965508002521944}
   m_Layer: 5
   m_Name: PointSystem
   m_TagString: Untagged
@@ -80,7 +80,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Orion
---- !u!114 &5962200194590890052
+--- !u!114 &-5595965508002521944
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

@@ -28,7 +28,7 @@ public class Submit : MonoBehaviour
             }
             if (_ingredientsMatch)
             {
-                _ingredientsMatch = false;
+                //_ingredientsMatch = false;
             }
             else
             {
@@ -38,27 +38,28 @@ public class Submit : MonoBehaviour
             }
         }
 //if it's fully correct
-        if ( nextOrder.currentRecipe != null)
-        {
-            Debug.Log("12345678");
-        }
-
-        if (incorrect)
-        {
-            
-        }
-        else if (nextOrder.currentRecipe.appliance.Equals(selectedAppliance) && nextOrder.currentRecipe.plate.Equals(selectedPlate))
-        {
-            
-        }
-        
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if ( nextOrder.currentRecipe != null)
+        {
+            if (_ingredientsMatch){
+                GameObject.Find("PointSystem").GetComponent<PointSystem>().gainPoints(gameObject.GetComponent<ReceiptScript>().cost);
+                Debug.Log("gg");
+                //_ingredientsMatch = false;
+            }
+            if (incorrect)
+            {
+                
+            }
+            else if (nextOrder.currentRecipe.appliance.Equals(selectedAppliance) && nextOrder.currentRecipe.plate.Equals(selectedPlate))
+            {
+                GameObject.Find("PointSystem").GetComponent<PointSystem>().gainPoints(nextOrder.currentRecipe.cost);
+                Debug.Log("gg");
+            }
+        }
     }
     
 }
