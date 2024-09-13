@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Pasta
   necessary:
-  - noodles
+  - pasta
   - water
   optionals:
   - pesto

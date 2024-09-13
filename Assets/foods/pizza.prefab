@@ -50,10 +50,9 @@ MonoBehaviour:
   - tomato
   - cheese
   optionals:
-  - peperoni
+  - pepperoni
   - mushroom
   - pepper
-  - artichoke
   - pineapple
   - chicken
   appliance: oven
