@@ -10,7 +10,7 @@ public class Submit : MonoBehaviour
     ApplianceList applianceList;
     DishList dishList;
     public NextOrder nextOrder;
-    private bool _ingredientsMatch = false;
+    private bool _ingredientsMatch;
     private bool incorrect = false;
     public List<string> selectedIngredients;
     public string selectedPlate;
@@ -19,12 +19,12 @@ public class Submit : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
         nextOrder = GetComponent<NextOrder>();
     }
 
     public void SubmitOrder()
     {
+        selectedIngredients = GameObject.Find("IngredientList").GetComponent<IngredientList>().selectedIngredients;
         ingredients = nextOrder.ingredients;
         for (int i = 0; i < ingredients.Count; i++)
         {
@@ -34,23 +34,23 @@ public class Submit : MonoBehaviour
                 {
                     _ingredientsMatch = true;
                     Debug.Log("Ingredients Match" + ingredients[i] + selectedIngredients[j]);
+                    incorrect = false;
+                    j = selectedIngredients.Count;
+                }
+                else{
+                    _ingredientsMatch = false;
+                    incorrect = true;
                 }
             }
-
-            if (_ingredientsMatch)
-            {
-                _ingredientsMatch = false;
-            }
-            else
-            {
-                //Debug.Log("incoreect");
-                incorrect = true;
-                break;
-            }
         }
-        if(!_ingredientsMatch)
+        if(!incorrect)
         {
             Debug.Log("You win for real this time");
+            GameObject.Find("Timer").GetComponent<TimeSystem>().CompleteDish();
+            GameObject.Find("PointSystem").GetComponent<PointSystem>.gainPoints(nextOrder.currentRecipe.cost);
+        }
+        else{
+            Debug.Log("erm");
         }
 
         //if it's fully correct

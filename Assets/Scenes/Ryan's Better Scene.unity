@@ -7277,6 +7277,14 @@ PrefabInstance:
       value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 7628763915952271957, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
+      propertyPath: nextOrder
+      value: 
+      objectReference: {fileID: 1656779926}
+    - target: {fileID: 7628763915952271957, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
+      propertyPath: ingredients.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7628763915952271957, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
       propertyPath: selectedIngredients.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -15184,7 +15192,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1656779924}
         m_TargetAssemblyTypeName: Submit, Assembly-CSharp
-        m_MethodName: CheckOrder
+        m_MethodName: SubmitOrder
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17330,6 +17338,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 22017a2f77df649d18e1191fc2e0a202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1656779926 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3552109659913400012, guid: 769ff3dc9a31c4285ae7586794b1d9f4, type: 3}
+  m_PrefabInstance: {fileID: 598268666}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70af8265ca34f4bad954b1df67014822, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1661509431
