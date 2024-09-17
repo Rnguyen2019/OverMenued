@@ -24,7 +24,7 @@ public class TimeSystem : MonoBehaviour
         LowTime();
 
         if(Input.GetKeyDown(KeyCode.P)){
-            CompleteDish();
+            //CompleteDish();
         }
     }
     public void Bounce(){
@@ -38,7 +38,7 @@ public class TimeSystem : MonoBehaviour
          timer -= Time.deltaTime;
         if (timer <= 0){
             timeText.text = "Out of Time!";
-            timeText.text = "Fucking Loser Moron Idiot Shit Head Nerd!";
+            //timeText.text = "Fucking Loser Moron Idiot Shit Head Nerd!";
         }
         else{
             if(timer.ToString().Length >= 5){
@@ -56,6 +56,6 @@ public class TimeSystem : MonoBehaviour
         }
     }
     public void CompleteDish(){
-        timer += 30;
+        timer += 60;
     }
 }
