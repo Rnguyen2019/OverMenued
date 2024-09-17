@@ -19,7 +19,7 @@ public class ReceiptScript : MonoBehaviour
         receipt.text = "***************** \n" + gameObject.GetComponent<NextOrder>().currentRecipe.dishName + "\n\n";
         cost = gameObject.GetComponent<NextOrder>().currentRecipe.cost;
         int rand1 = gameObject.GetComponent<NextOrder>().rand;
-        if (rand1 != 0)
+        /*if (rand1 != 0)
         {
             for (int i = 0; i <= rand1; i++)
             {
@@ -27,6 +27,7 @@ public class ReceiptScript : MonoBehaviour
                 cost += 0.2;
             }
         }
+        */
         receipt.text += "\nTotal     $" + cost +"\n- - - - - - - - - - -";
         //receipt.fontStyle = FontStyle.Bold;
         //PointSystem.gainPoints(cost);

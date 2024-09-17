@@ -5,12 +5,12 @@ using UnityEngine.UI;
 
 public class PointSystem : MonoBehaviour
 {
-    private static double totalCost = 0;
-    public static Text pointScore;
+    private double totalCost = 0;
+    public Text pointScore;
     // Start is called before the first frame update
     void Start()
     {
-        
+        pointScore.text = "$0.00";
     }
 
     // Update is called once per frame
@@ -19,7 +19,16 @@ public class PointSystem : MonoBehaviour
         
     }
 
-    public static void gainPoints(double points){
+    public void gainPoints(double points){
+        /*int rand1 = gameObject.GetComponent<NextOrder>().rand;
+        if (rand1 != 0)
+        {
+            for (int i = 0; i <= rand1; i++)
+            {
+                totalCost += 0.2;
+            }
+        }
+        */
         totalCost += points;
         pointScore.text = "$" + totalCost;
     }
