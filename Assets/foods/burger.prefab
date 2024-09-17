@@ -46,7 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dishName: Burger
   necessary:
-  - meat
+  - beef
   - bread
   optionals:
   - cheese
