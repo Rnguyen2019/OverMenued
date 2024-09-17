@@ -47,7 +47,7 @@ public class Submit : MonoBehaviour
         {
             Debug.Log("You win for real this time");
             GameObject.Find("Timer").GetComponent<TimeSystem>().CompleteDish();
-            GameObject.Find("PointSystem").GetComponent<PointSystem>.gainPoints(nextOrder.currentRecipe.cost);
+            GameObject.Find("PointSystem").GetComponent<PointSystem>().gainPoints(nextOrder.currentRecipe.cost);
         }
         else{
             Debug.Log("erm");
