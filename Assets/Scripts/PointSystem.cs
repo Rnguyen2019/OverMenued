@@ -20,6 +20,15 @@ public class PointSystem : MonoBehaviour
     }
 
     public void gainPoints(double points){
+        totalCost = 0;
+        int rand1 = gameObject.GetComponent<NextOrder>().rand;
+        if (rand1 != 0)
+        {
+            for (int i = 0; i <= rand1; i++)
+            {
+                totalCost += 0.2;
+            }
+        }
         totalCost += points;
         pointScore.text = "$" + totalCost;
     }
