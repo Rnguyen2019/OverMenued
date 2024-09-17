@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Submit : MonoBehaviour
@@ -42,10 +43,14 @@ public class Submit : MonoBehaviour
             }
             else
             {
-                Debug.Log("incoreect");
+                //Debug.Log("incoreect");
                 incorrect = true;
                 break;
             }
+        }
+        if(!_ingredientsMatch)
+        {
+            Debug.Log("You win for real this time");
         }
 
         //if it's fully correct
@@ -69,7 +74,7 @@ public class Submit : MonoBehaviour
         }
         if (nextOrder.currentRecipe != null)
         {
-            if (nextOrder.currentRecipe.appliance.ToLower().Equals(selectedAppliance.ToLower()) &&
+            if (nextOrder.currentRecipe.appliance.ToLower().Equals(selectedAppliance.ToLower()) ||
                      nextOrder.currentRecipe.plate.ToLower().Equals(selectedPlate.ToLower()))
             {
                 Debug.Log("12345678");

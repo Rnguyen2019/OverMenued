@@ -52,6 +52,6 @@ MonoBehaviour:
   - pork
   - potato
   optionals: []
-  appliance: stove
+  appliance: pan
   plate: plate
   cost: 12.99
